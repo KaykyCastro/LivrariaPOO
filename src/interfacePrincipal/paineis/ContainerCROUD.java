@@ -296,6 +296,7 @@ class PainelLivros implements JPanelsActions{
 		constante.gridy = 0;
 		constante.gridwidth = 1;
 		constante.gridheight = 1;
+		constante.anchor = GridBagConstraints.BASELINE_LEADING;
 		this.painelLivros.add(labelTituloPainel, constante);
 		
 		constante.gridx = 0;
@@ -570,6 +571,7 @@ class PainelClientes implements JPanelsActions{
 		constante.gridheight = 1;
 		Font f = new Font("Fonte A", 4, 15);
 		this.labelTituloClientes.setFont(f);
+		constante.anchor = GridBagConstraints.BASELINE_LEADING;
 		this.painelClientes.add(labelTituloClientes, constante);
 		
 		constante.gridx = 0;
@@ -1098,7 +1100,7 @@ public class ContainerCROUD implements JPanelsActions{
 		//Configuracoes de borda devem ser personalizadas para cada computador
 		this.englobaLivros.setBorder(BorderFactory.createEmptyBorder( (int) Math.ceil(screenHeight*0.008), (int) Math.ceil(screenWidth *0.008), (int) Math.ceil(screenHeight*0.008), (int) Math.ceil(screenWidth*0.008)));
 		this.englobaBotoes.setBorder(BorderFactory.createEmptyBorder( (int) Math.ceil(screenHeight*0.008), (int) Math.ceil(screenWidth *0.008), (int) Math.ceil(screenHeight*0.008), (int) Math.ceil(screenWidth*0.008)));
-		this.englobaClientes.setBorder(BorderFactory.createEmptyBorder( (int) Math.ceil(screenHeight*0.008), (int) Math.ceil(screenWidth *0.008), (int) Math.ceil(screenHeight*0.008), (int) Math.ceil(screenWidth*0.008)));
+		this.englobaClientes.setBorder(BorderFactory.createEmptyBorder( (int) Math.ceil(screenHeight*0.010), (int) Math.ceil(screenWidth *0.008), (int) Math.ceil(screenHeight*0.010), (int) Math.ceil(screenWidth*0.008)));
 		this.englobaLivrosEClientes.setLayout(new BorderLayout());
 		
 		this.container = new JPanel();
